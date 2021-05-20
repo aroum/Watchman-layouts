@@ -10,9 +10,34 @@ Watchman’s Layouts is a layout for ergo keyboards with 42 keys, such as: corne
 [Numpad edition](http://www.keyboard-layout-editor.com/#/gists/ac3aeb8844fee4f92e167979eb98936a)
  – an option for those who often need a numpad and do not want to clamp two modifiers.  This is the same as the advanced edition, but instead of the navigation cluster, numpad is used.
 
- The repository contains:
+[Commander edition](http://www.keyboard-layout-editor.com/#/gists/a9f4aa4ac14d66351b3cfa98a42d9165) - Option for working with dual-pane file managers. they only need F1-F7. Also, the Raise layer is symmetrical for both halves.
+
+## The repository contains:
 * config*.c QMK files for 44 and 42 keys keyboard
-* *.json files for VIA for jian
+* *.json files for VIA for jian and corne
 * *.json KLE files 
 * *.png KLE images
 
+## Use:
+### QMK
+* Copy qmk/keymap*.c to your keyboard folder and rename it to keymap.c
+* If you need RGB layer indicator(else remove RGB section from keymap.c)
+  * Add to rules.mk:
+  ```
+  MOUSEKEY_ENABLE = yes
+  RGBLIGHT_ENABLE = yes
+  RGBLIGHT_LAYERS = yes
+  ```
+
+  * Add tot config.h:
+  ```
+  #define RGBLIGHT_LAYERS
+  #define RGBLIGHT_MAX_LAYERS 5
+  #define RGBLIGHT_LAYERS_OVERRIDE_RGB_OFF
+  ```
+
+### VIA
+Just load via/*.json 
+
+### KLE
+Just open link or upload kle/*.json to keyboard-layout-editor.com

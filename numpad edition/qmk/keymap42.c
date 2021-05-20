@@ -1,4 +1,72 @@
 #include QMK_KEYBOARD_H
+enum custom_keycodes {
+    LNG_SW = SAFE_RANGE,
+    RUBLE,
+    CPRGHT,
+    DEGREE,
+    GRTSGN,
+    PLSMNS,
+};
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+    case LNG_SW:
+        if (record->event.pressed) {
+            // when keycode LNG_SW is pressed
+            SEND_STRING(SS_LGUI(SS_TAP(X_SPC)));
+        } else {
+            // when keycode LNG_SW is released
+        }
+        break;
+
+    case RUBLE:
+        if (record->event.pressed) {
+            // when keycode RUBLE is pressed
+            SEND_STRING(SS_RALT(SS_TAP(X_8)));
+        } else {
+            // when keycode RUBLE is released
+        }
+        break;
+
+    case CPRGHT:
+        if (record->event.pressed) {
+            // when keycode CPRGHT is pressed
+            SEND_STRING(SS_LALT(SS_TAP(X_KP_0) SS_TAP(X_KP_1) SS_TAP(X_KP_6) SS_TAP(X_KP_9)));
+        } else {
+            // when keycode CPRGHT is released
+        }
+        break;
+
+    case DEGREE:
+        if (record->event.pressed) {
+            // when keycode DEGREE is pressed
+            SEND_STRING(SS_LALT(SS_TAP(X_KP_0) SS_TAP(X_KP_1) SS_TAP(X_KP_7) SS_TAP(X_KP_6)));
+        } else {
+            // when keycode DEGREE is released
+        }
+        break;
+
+    case GRTSGN:
+        if (record->event.pressed) {
+            // when keycode GRTSGN is pressed
+            SEND_STRING(SS_LALT(SS_TAP(X_KP_6) SS_TAP(X_KP_2)));
+        } else {
+            // when keycode GRTSGN is released
+        }
+        break;
+
+    case PLSMNS:
+        if (record->event.pressed) {
+            // when keycode PLSMNS is pressed
+            SEND_STRING(SS_LALT(SS_TAP(X_KP_0) SS_TAP(X_KP_1) SS_TAP(X_KP_7) SS_TAP(X_KP_7)));
+        } else {
+            // when keycode PLSMNS is released
+        }
+        break;
+
+        }
+    return true;
+};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [0] = LAYOUT(

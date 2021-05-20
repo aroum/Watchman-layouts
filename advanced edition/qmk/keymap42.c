@@ -7,6 +7,7 @@ enum custom_keycodes {
     DEGREE,
     GRTSGN,
     PLSMNS,
+    SCRCUT,
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
@@ -65,6 +66,15 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         }
         break;
 
+    case SCRCUT:
+        if (record->event.pressed) {
+            // when keycode SCRCUT is pressed
+            SEND_STRING(SS_LGUI(SS_LSFT(SS_TAP(X_S))));
+        } else {
+            // when keycode SCRCUT is released
+        }
+        break;
+
         }
     return true;
 };
@@ -85,7 +95,7 @@ KC_LALT,  KC_F9,  KC_F10, KC_F11, KC_F12, LNG_SW,      RUBLE,   CPRGHT,  DEGREE,
 [2] = LAYOUT(
 KC_LGUI,        KC_PAST, KC_7, KC_8, KC_9, KC_PPLS,    KC_WH_U, KC_HOME, KC_MPLY, KC_PGUP, KC_VOLU, KC_RGUI,
 KC_LCTL,        KC_PSLS, KC_4, KC_5, KC_6, KC_PMNS,    KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_VOLD, KC_RCTL,
-LALT_T(KC_EQL), KC_0,    KC_1, KC_2, KC_3, KC_PDOT,    KC_WH_D, KC_END,  KC_PSCR, KC_PGDN, KC_MUTE, KC_RALT,
+LALT_T(KC_EQL), KC_0,    KC_1, KC_2, KC_3, KC_PDOT,    KC_WH_D, KC_END,  SCRCUT, KC_PGDN, KC_MUTE, KC_RALT,
                     _______, _______, LT(3,KC_ENT),    LT(3,KC_ESC), _______, _______
 ),
 [3] = LAYOUT(
