@@ -21,10 +21,14 @@ Watchman’s Layouts is a layout for ergo keyboards with 42 keys, such as: corne
 ## Use:
 ### QMK
 * Copy qmk/keymap*.c to your keyboard folder and rename it to keymap.c
+* Add to rules.mk:
+  ```
+  MOUSEKEY_ENABLE = yes
+  ```
+
 * If you need RGB layer indicator(else remove RGB section from keymap.c)
   * Add to rules.mk:
   ```
-  MOUSEKEY_ENABLE = yes
   RGBLIGHT_ENABLE = yes
   RGBLIGHT_LAYERS = yes
   ```
