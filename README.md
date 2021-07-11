@@ -1,4 +1,5 @@
-Watchman’s Layouts is a layout for ergo keyboards with 42 keys, such as: corne / jian / jorne / jorian / quasi 42 / centromere / chimera ergo 42 / mooncake 42 / enki 42. The idea is to place all the symbols I use on the main layer: for example: “[  ] `- \”, which are often on an extra layer in other layouts. And also have a full set of modifiers for each hand. This is achieved through the use of Mod-Tap.
+Watchman’s Layouts is a layout for ergo keyboards with 42 keys, such as: [corne](https://github.com/foostan/crkbd) / [jian](https://github.com/KGOH/Jian-Info) / [jorne](https://github.com/joric/jorne/) / [jorian](https://github.com/joric/jorian) / [quasi 42](http://ibnteo.klava.org/keyboard/quasi42-2) / [centromere](https://southpawdesign.net/products/centromere-wireless-keyboard?variant=8868004724796) / [chimera ergo 42](https://github.com/GlenPickle/Chimera) / [mooncake 42](https://github.com/aroum/mooncake42) / [enki 42](https://github.com/aroum/enki42). The idea is to place all the symbols I use on the main layer: for example: “[  ] ` - \”, which are often on an extra layer in other layouts. And also have a full set of modifiers for each hand. This is achieved through the use of Mod-Tap.
+
 
 ![Main layer](/_images/main.png )
 
