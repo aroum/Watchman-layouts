@@ -1,7 +1,7 @@
 Watchman’s Layouts is a layout for ergo keyboards with 42 keys, such as: [corne](https://github.com/foostan/crkbd) / [jian](https://github.com/KGOH/Jian-Info) / [jorne](https://github.com/joric/jorne/) / [jorian](https://github.com/joric/jorian) / [quasi 42](http://ibnteo.klava.org/keyboard/quasi42-2) / [centromere](https://southpawdesign.net/products/centromere-wireless-keyboard?variant=8868004724796) / [chimera ergo 42](https://github.com/GlenPickle/Chimera) / [mooncake 42](https://github.com/aroum/mooncake42) / [enki 42](https://github.com/aroum/enki42). The idea is to place all the symbols I use on the main layer: for example: “[  ] ` - \”, which are often on an extra layer in other layouts. And also have a full set of modifiers for each hand. This is achieved through the use of Mod-Tap.
 
 
-![Main layer](/_images/main.png )
+![Main layer](_images/main.png )
 
 [Regular edition](http://www.keyboard-layout-editor.com/#/gists/246772cb72fa2de02354d5cb1add6b2b)
  – the layout is as close as possible to the layout of a regular keyboard: numbers, symbols and function keys are arranged in rows.
@@ -46,3 +46,10 @@ Just load via/*.json
 
 ### KLE
 Just open link or upload kle/*.json to keyboard-layout-editor.com
+
+
+## 44 key
+
+In the variant for 44 keys, 7 columns are duplicated Win/] for greater compatibility.
+
+![Main layer44](_images/main44.png )
