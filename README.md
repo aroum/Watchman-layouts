@@ -11,7 +11,9 @@ Watchman’s Layouts is a layout for ergo keyboards with 42/44 keys, such as: [c
 * [Numpad edition](http://www.keyboard-layout-editor.com/#/gists/ac3aeb8844fee4f92e167979eb98936a)
  – an option for those who often need a numpad and do not want to clamp two modifiers.  This is the same as the advanced edition, but instead of the navigation cluster, numpad is used.
 
-* [Commander edition](http://www.keyboard-layout-editor.com/#/gists/a9f4aa4ac14d66351b3cfa98a42d9165) - Option for working with dual-pane file managers. they only need F1-F7. Also, the Raise layer is symmetrical for both halves.
+* [Commander edition](http://www.keyboard-layout-editor.com/#/gists/a9f4aa4ac14d66351b3cfa98a42d9165) - an option for working with dual-pane file managers. they only need F1-F7. Also, the Raise layer is symmetrical for both halves.
+
+* [Mouse edition](http://www.keyboard-layout-editor.com/#/gists/801abfb3cb21604b13db734a4d04d559) - same as Commander edition, but with mouse emulation
 
 ## The repository contains:
 * ```config*.c``` QMK files for 44/42/36/34 keys keyboard
