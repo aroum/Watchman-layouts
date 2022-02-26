@@ -1,3 +1,3 @@
-# Regular edition
+# Mouse edition
 
-![Regular edition](../_images/watchman's-layout-mouse-edition.png)
+![Mouse edition](../_images/watchman's-layout-mouse-edition.png)
