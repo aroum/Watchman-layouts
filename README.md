@@ -48,10 +48,10 @@ Watchman’s Layouts are several layout options for ergo keyboards with 42/44 ke
 Just load ```via/*.json```
 
 ### KLE
-Just open link or upload ```kle/*.json``` to [keyboard-layout-editor.com)](keyboard-layout-editor.com)
+Just open link or upload ```kle/*.json``` to [keyboard-layout-editor.com](keyboard-layout-editor.com)
 
 ### ZMK [work in progress]
-Copy ```qmk/keymap*.c``` to ```YOUR_KEYBOARD/config/``` and rename it to  ```YOUR_KEYBOARD.keymap```
+Copy ```zmk/keymap*.c``` to ```YOUR_KEYBOARD/config/``` and rename it to  ```YOUR_KEYBOARD.keymap```
 
 ## 44 key
 
