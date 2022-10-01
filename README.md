@@ -1,4 +1,4 @@
-Watchman’s Layouts are several layout options for ergo keyboards with 42/44 keys, such as: [corne](https://github.com/foostan/crkbd) / [jian](https://github.com/KGOH/Jian-Info) / [jorne](https://github.com/joric/jorne/) / [jorian](https://github.com/joric/jorian) / [quasi 42](http://ibnteo.klava.org/keyboard/quasi42-2) / [centromere](https://southpawdesign.net/products/centromere-wireless-keyboard?variant=8868004724796) / [chimera ergo 42](https://github.com/GlenPickle/Chimera) / [mooncake 42](https://github.com/aroum/mooncake42) / [enki 42](https://github.com/aroum/enki42). The idea is to place all the symbols I use on the main layer: for example: “[  ] ` - \”, which are often on an extra layer in other layouts. And also have a full set of modifiers for each hand. This is achieved through the use of Mod-Tap.
+Watchman’s Layouts are several layout options for ergo keyboards with 42/44 keys, such as: [corne](https://github.com/foostan/crkbd) / [jian](https://github.com/KGOH/Jian-Info) / [jorne](https://github.com/joric/jorne/) / [jorian](https://github.com/joric/jorian) / [quasi 42](http://ibnteo.klava.org/keyboard/quasi42-2) / [centromere](https://southpawdesign.net/products/centromere-wireless-keyboard?variant=8868004724796) / [chimera ergo 42](https://github.com/GlenPickle/Chimera) / [mooncake 42](https://github.com/aroum/mooncake42) / [enki 42](https://github.com/aroum/enki42) / [wEnki44](https://github.com/aroum/wEnki44). The idea is to place all the symbols I use on the main layer: for example: “[  ] ` - \”, which are often on an extra layer in other layouts. And also have a full set of modifiers for each hand. This is achieved through the use of Mod-Tap.
 
 
 ![Main layer](_images/main.png )
@@ -16,7 +16,7 @@ Watchman’s Layouts are several layout options for ergo keyboards with 42/44 ke
 * [Mouse edition](http://www.keyboard-layout-editor.com/#/gists/801abfb3cb21604b13db734a4d04d559) - same as Commander edition, but with mouse emulation
 
 ## The repository contains:
-* ```config*.c``` QMK files for 44/42/36/34 keys keyboard
+* ```config*.c``` QMK files for 44/42 keys keyboard
 * ```*.json``` files for VIA for jian and corne 
 * ```*.json``` KLE files 
 * ```*.png```  KLE images
@@ -25,19 +25,19 @@ Watchman’s Layouts are several layout options for ergo keyboards with 42/44 ke
 ### QMK
 * Copy ```qmk/keymap*.c``` to ```YOUR_KEYBOARD/keymaps/default/``` and rename it to keymap.c
   
-* Add to YOUR_KEYBOARD/krules.mk:
+* Add to YOUR_KEYBOARD/rules.mk:
   ```
   MOUSEKEY_ENABLE = yes
   ```
 
 * If you need RGB layer indicator(else remove RGB section from keymap.c)
-  * Add to ```YOUR_KEYBOARD/krules.mk```:
+  * Add to ```YOUR_KEYBOARD/rules.mk```:
   ```
   RGBLIGHT_ENABLE = yes
   RGBLIGHT_LAYERS = yes
   ```
 
-  * Add to ```YOUR_KEYBOARD/kconfig.h```:
+  * Add to ```YOUR_KEYBOARD/config.h```:
   ```
   #define RGBLIGHT_LAYERS
   #define RGBLIGHT_MAX_LAYERS 5
@@ -48,10 +48,12 @@ Watchman’s Layouts are several layout options for ergo keyboards with 42/44 ke
 Just load ```via/*.json```
 
 ### KLE
-Just open link or upload ```kle/*.json``` to [keyboard-layout-editor.com](keyboard-layout-editor.com)
+Just open link or upload ```kle/*.json``` to [keyboard-layout-editor.com)](keyboard-layout-editor.com)
 
 ### ZMK [work in progress]
-Copy ```zmk/keymap*.c``` to ```YOUR_KEYBOARD/config/``` and rename it to  ```YOUR_KEYBOARD.keymap```
+Copy ```zmk/keymap*.keymap``` to ```YOUR_KEYBOARD/config/``` and rename it to  ```YOUR_KEYBOARD.keymap```
+
+The layout for ZMK has some differences from the layout for QMK, due to the limitations of ZMK-firmware.
 
 ## 44 key
 
