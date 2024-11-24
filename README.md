@@ -51,7 +51,7 @@ Just load ```via/*.json```
 ### KLE
 Just open link or upload ```kle/*.json``` to [keyboard-layout-editor.com)](keyboard-layout-editor.com)
 
-### ZMK [work in progress]
+### ZMK 
 Copy ```zmk/keymap*.keymap``` to ```YOUR_KEYBOARD/config/``` and rename it to  ```YOUR_KEYBOARD.keymap```
 
 The layout for ZMK has some differences from the layout for QMK, due to the limitations of ZMK-firmware.
